@@ -1,0 +1,9 @@
+.button {
+    @apply m-5 py-3 px-14 text-4xl font-bold leading-64 text-purple rounded-full bg-white;
+    box-shadow: -10px 10px 0 0 #FF00A6;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translate(-10px,10px);
+}

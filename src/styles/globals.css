@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: huninn;
+  src: url(./fonts/jf-openhuninn-1.1.ttf);
+}
+
+@font-face {
+  font-family: baloo;
+  src: url(./fonts//Baloo2-VariableFont_wght.ttf);
+}
+
+html, body {
+  font-family: huninn, baloo, sans-serif;
+  background: black;
+  color: white;
+}
