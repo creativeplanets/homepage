@@ -12,8 +12,14 @@
   src: url(./fonts//Baloo2-VariableFont_wght.ttf);
 }
 
-html, body {
+@font-face {
+  font-family: fredokaOne;
+  src: url(./fonts//FredokaOne-Regular.ttf);
+}
+
+html,
+body {
   font-family: huninn, baloo, sans-serif;
-  background: black;
-  color: white;
+  /* background: black; */
+  /* color: white; */
 }

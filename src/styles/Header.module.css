@@ -1,0 +1,23 @@
+.image {
+  @apply w-full bg-no-repeat bg-top bg-cover;
+}
+
+.sky {
+  @apply image min-h-[105rem];
+  background-image: url('../assets/header/sky.svg');
+  background-attachment: fixed;
+}
+
+.items {
+  @apply image absolute top-0 min-h-[105rem];
+  background-image: url('../assets/header/items.svg');
+}
+
+.welcome {
+  @apply absolute text-white font-normal text-[4.375rem] leading-[6.25rem] tracking-[0.03em] top-[22.3rem] left-[21.625rem];
+  font-family: fredokaOne;
+}
+
+.text_shadow {
+  @apply drop-shadow-[-5px_5px_#ff00a6];
+}
