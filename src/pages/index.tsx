@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
 import ScrollToTop from "react-scroll-to-top";
-// https://www.npmjs.com/package/react-scroll-to-top
-import Rocket from "../assets/image/Rocket.svg";
+import Rocket from "@/assets/image/Rocket.svg";
+import Flow from "@/components/Flow";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,10 @@ export default function Home() {
       <main>
         <Button title="See more"></Button>
         <CardSection></CardSection>
+        <Flow></Flow>
         <ScrollToTop
           smooth
-          style={{ background: "transparent", right: "0", margin: "48px"}}
+          style={{ background: "transparent", right: "0", margin: "48px" }}
           component={
             <Image src={Rocket} alt="scrollTop" width={52} height={131} />
           }

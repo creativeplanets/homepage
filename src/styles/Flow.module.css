@@ -1,0 +1,5 @@
+.title {
+  @apply text-title font-extrabold tracking-wider text-blue text-center;
+  padding-bottom: 50px;
+  padding-left: 200px;
+}
