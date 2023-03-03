@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Button from "@/components/Button";
 import CardSection from "@/components/CardSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Button title="See more"></Button>
         <CardSection></CardSection>
+        <ScrollToTop></ScrollToTop>
       </main>
     </>
   );

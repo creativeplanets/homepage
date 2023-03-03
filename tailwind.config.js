@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       colors: {
         purple: "#FF00A6",
+        blue: "#37538A",
         434343: "#434343",
+      },
+      fontSize: {
+        title: "3.5rem",
       },
       lineHeight: {
         64: "4rem",
@@ -27,10 +31,6 @@ module.exports = {
       },
       height: {
         cardXl: "24rem",
-      },
-      padding: {
-        cardTitle: "5.875rem",
-        cardContent: "3.25rem",
       },
       spacing: {
         cardXl: "6.625rem",
