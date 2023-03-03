@@ -5,6 +5,7 @@ import planet2 from "../assets/image/planet2.svg";
 import planet3 from "../assets/image/planet3.svg";
 import planet4 from "../assets/image/planet4.svg";
 import planet5 from "../assets/image/planet5.svg";
+import planet6 from "../assets/image/planet6.svg";
 
 const CardContent = [
   {
@@ -40,14 +41,14 @@ const CardContent = [
     subtitle: "UX研究與設計",
     content:
       "我們的工程團隊由一群技術狂熱者組成， 致力於用新興技術打造高效能及優異使用者體驗的服務，擔心太多人使用流量爆炸嗎？害怕不好的程式碼造成網站卡頓嗎？ 交給我們就對了！",
-    image: planet2,
+    image: planet5,
   },
   {
     id: 6,
     subtitle: "跨平台應用開發",
     content:
       "跨平台App的使用者體驗一致性是我們追求的目標，利用前瞻的技術讓使用者不管在任何平台都能有相同的體驗，減少重新學習成本，降低疑惑，並提升使用者對App的安全感與滿意度，建立信任。",
-    image: planet5,
+    image: planet6,
   },
 ];
 
