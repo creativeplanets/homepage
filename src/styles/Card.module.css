@@ -1,5 +1,10 @@
+.title {
+  @apply text-title font-extrabold tracking-wider text-blue text-center;
+  padding-bottom: 50px;
+}
 .cardSection {
   @apply w-xl grid grid-cols-3 gap-x-cardXl gap-y-10 m-auto;
+  padding: 60px 0;
 }
 .card {
   @apply bg-white text-black text-center rounded-30 shadow-card h-cardXl;
@@ -8,9 +13,13 @@
   @apply rounded-full mx-auto shadow-lg shadow-cyan-500/10 relative z-10;
   margin-bottom: -65px;
 }
-.title {
-  @apply text-xl tracking-5 pt-cardTitle;
+.textSection {
+  @apply gap-y-2 grid px-3 pb-12;
+  padding-top: 90px;
+}
+.subtitle {
+  @apply text-xl tracking-5 px-2.5 py-1;
 }
 .content {
-  @apply text-sm text-434343 tracking-wider leading-8 pt-4 px-6 pb-cardContent;
+  @apply text-sm text-434343 tracking-wider leading-8 px-3 py-1;
 }
