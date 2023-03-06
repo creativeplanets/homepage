@@ -1,0 +1,17 @@
+.background {
+  @apply mx-auto bg-no-repeat bg-contain w-[1231px] h-[866px] flex;
+  background-image: url('../assets/who/background.svg');
+}
+
+.content {
+  @apply w-[46.875rem] h-[22rem] m-auto;
+}
+
+.content__title {
+  @apply text-[3.5rem] leading-[5.5rem] tracking-[0.05em] text-blue font-extrabold;
+  font-family: baloo;
+}
+
+.content__paragraph {
+  @apply text-[1.125rem] leading-[3.75rem] tracking-[0.05em] text-blue;
+}

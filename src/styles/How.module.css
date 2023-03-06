@@ -1,0 +1,28 @@
+.flowContainer {
+  @apply flex items-start w-xl mx-auto relative my-[13.4375rem];
+}
+.left {
+  @apply ml-[-5.0625rem];
+}
+.right {
+  @apply z-10 ml-[6.25rem];
+}
+.title {
+  @apply text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[100px];
+}
+.body {
+  @apply text-center text-434343 p-2.5;
+}
+.subtitle {
+  @apply text-2xl tracking-5 p-2.5;
+}
+.content {
+  @apply text-lg leading-[50px] tracking-5 p-2.5 w-[24.5625rem];
+}
+.verticalLine {
+  @apply h-16 border-r border-[#888888] translate-x-[-50%] my-[16px];
+}
+.step {
+  @apply my-auto p-2.5 text-white	absolute font-[Antonio] text-[21.875rem] leading-[28.305rem] top-[3.625rem] right-[-3.4375rem];
+  text-shadow: 27px 24px rgba(255, 0, 166, 0.1);
+}

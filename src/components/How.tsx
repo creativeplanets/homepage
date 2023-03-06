@@ -1,10 +1,10 @@
-import styles from "../styles/Flow.module.css";
+import styles from "../styles/How.module.css";
 import Image from "next/image";
 import Discovery from "../assets/flow/discovery.svg";
 
-interface Flow {}
+interface How {}
 
-export default function Flow(props: Flow) {
+export default function How(props: How) {
   return (
       <div className={styles.flowContainer}>
         <Image

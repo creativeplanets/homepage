@@ -17,6 +17,11 @@
   src: url(./fonts/Antonio-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: fredokaOne;
+  src: url(./fonts//FredokaOne-Regular.ttf);
+}
+
 html,
 body {
   font-family: baloo, huninn, sans-serif;

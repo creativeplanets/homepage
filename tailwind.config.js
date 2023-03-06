@@ -20,17 +20,11 @@ module.exports = {
       letterSpacing: {
         5: "0.3125rem",
       },
-      borderRadius: {
-        30: "1.875rem",
-      },
       boxShadow: {
         card: "0 0.25rem 0.625rem rgba(0, 0, 0, 0.15)",
       },
       width: {
         xl: "63.54166666666667%",
-      },
-      height: {
-        cardXl: "24rem",
       },
       spacing: {
         cardXl: "6.625rem",

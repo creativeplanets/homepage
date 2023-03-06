@@ -1,12 +1,12 @@
-import styles from "../styles/Card.module.css";
+import styles from "../styles/What.module.css";
 import Image from "next/image";
-interface Card {
+interface What {
   image: any;
   subtitle: string;
   content: string;
 }
 
-export default function Card(props: Card) {
+export default function What(props: What) {
   return (
     <div>
       <Image

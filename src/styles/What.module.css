@@ -1,0 +1,24 @@
+.background {
+  background-image: url("../assets/card/background.svg");
+}
+.title {
+  @apply text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[2.5rem];
+}
+.cardContainer {
+  @apply w-xl grid grid-cols-3 gap-x-cardXl gap-y-10 m-auto py-[3.75rem];
+}
+.card {
+  @apply bg-white text-black text-center rounded-[1.875rem] shadow-card h-[24rem];
+}
+.planets {
+  @apply relative z-10 rounded-full mx-auto mb-[-4.0625rem];
+}
+.textSection {
+  @apply gap-y-2 grid px-3 pb-12 pt-[5.625rem];
+}
+.subtitle {
+  @apply text-xl tracking-5 px-2.5 py-1;
+}
+.content {
+  @apply text-sm text-434343 tracking-wider leading-8 px-3 py-1;
+}

@@ -2,10 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Button from "@/components/Button";
-import CardSection from "@/components/CardSection";
+import Header from "@/components/Header";
+import Who from "@/components/Who";
+import WhatSection from "@/components/WhatSection";
 import ScrollToTop from "react-scroll-to-top";
 import Rocket from "@/assets/scroll-top/Rocket.svg";
-import Flow from "@/components/Flow";
+import How from "@/components/How";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <CardSection/>
-        <Flow/>
+        <Header />
+        <Who />
+        <WhatSection />
+        <How />
         <ScrollToTop
           smooth
           style={{

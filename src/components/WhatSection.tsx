@@ -1,5 +1,5 @@
-import styles from "../styles/Card.module.css";
-import Card from "@/components/Card";
+import styles from "../styles/What.module.css";
+import Card from "@/components/What";
 import planet1 from "../assets/card/planet1.svg";
 import planet2 from "../assets/card/planet2.svg";
 import planet3 from "../assets/card/planet3.svg";
@@ -52,9 +52,9 @@ const CardContent = [
   },
 ];
 
-export default function CardSection() {
+export default function WhatSection() {
   return (
-    <div>
+    <div style={{ margin: "64px 0 88px" }}>
       <div className={styles.title}>WHAT WE DO ?</div>
       <div className={styles.background}>
         <div className={styles.cardContainer}>
