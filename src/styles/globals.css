@@ -12,8 +12,13 @@
   src: url(./fonts//Baloo2-VariableFont_wght.ttf);
 }
 
-html, body {
+@font-face {
+  font-family: Antonio;
+  src: url(./fonts/Antonio-VariableFont_wght.ttf);
+}
+
+html,
+body {
   font-family: baloo, huninn, sans-serif;
-  background: black;
-  color: white;
+  background-color: #f8f8f8;
 }

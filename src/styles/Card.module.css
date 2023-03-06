@@ -1,21 +1,20 @@
-.title {
-  @apply text-title font-extrabold tracking-wider text-blue text-center;
-  padding-bottom: 50px;
+.background {
+  background-image: url("../assets/card/background.svg");
 }
-.cardSection {
-  @apply w-xl grid grid-cols-3 gap-x-cardXl gap-y-10 m-auto;
-  padding: 60px 0;
+.title {
+  @apply text-title font-extrabold tracking-wider text-blue text-center p-2.5 mb-[40px];
+}
+.cardContainer {
+  @apply w-xl grid grid-cols-3 gap-x-cardXl gap-y-10 m-auto py-[60px];
 }
 .card {
   @apply bg-white text-black text-center rounded-30 shadow-card h-cardXl;
 }
 .planets {
-  @apply rounded-full mx-auto shadow-lg shadow-cyan-500/10 relative z-10;
-  margin-bottom: -65px;
+  @apply rounded-full mx-auto shadow-lg shadow-cyan-500/10 relative z-10 mb-[-65px];
 }
 .textSection {
-  @apply gap-y-2 grid px-3 pb-12;
-  padding-top: 90px;
+  @apply gap-y-2 grid px-3 pb-12 pt-[90px];
 }
 .subtitle {
   @apply text-xl tracking-5 px-2.5 py-1;

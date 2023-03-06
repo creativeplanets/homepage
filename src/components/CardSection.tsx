@@ -1,11 +1,11 @@
 import styles from "../styles/Card.module.css";
 import Card from "@/components/Card";
-import planet1 from "../assets/image/planet1.svg";
-import planet2 from "../assets/image/planet2.svg";
-import planet3 from "../assets/image/planet3.svg";
-import planet4 from "../assets/image/planet4.svg";
-import planet5 from "../assets/image/planet5.svg";
-import planet6 from "../assets/image/planet6.svg";
+import planet1 from "../assets/card/planet1.svg";
+import planet2 from "../assets/card/planet2.svg";
+import planet3 from "../assets/card/planet3.svg";
+import planet4 from "../assets/card/planet4.svg";
+import planet5 from "../assets/card/planet5.svg";
+import planet6 from "../assets/card/planet6.svg";
 
 const CardContent = [
   {
@@ -26,7 +26,7 @@ const CardContent = [
     id: 3,
     subtitle: "前端應用開發",
     content:
-      "我們的工程團隊由一群技術狂熱者組成，致力於用新興技術打造高效能及優異使用者體驗的服務，擔心太多人使用流量爆炸嗎？害怕不好的程式碼造成網站卡頓嗎？交給我們就對了！",
+      "我們的前端工程團隊專精於現在最流行的兩大前端框架 Vue.js & React.js，除此之外也能協助你進行需求的可行性評估，利用 Jamstack 快速開發全靜態網站，讓你用最低的成本建立高效能、高安全性及 SEO 友善的網站。",
     image: planet3,
   },
   {
@@ -40,7 +40,7 @@ const CardContent = [
     id: 5,
     subtitle: "UX研究與設計",
     content:
-      "我們的工程團隊由一群技術狂熱者組成， 致力於用新興技術打造高效能及優異使用者體驗的服務，擔心太多人使用流量爆炸嗎？害怕不好的程式碼造成網站卡頓嗎？ 交給我們就對了！",
+      "地基要打好，房子才蓋得好。使用者體驗是所有產品的基石，透過使用者研究流程鎖定目標使用者，找尋真實的需求與痛點，塑造出最好的服務設計，提升整體服務價值，增進使用者滿意度。",
     image: planet5,
   },
   {
@@ -56,17 +56,19 @@ export default function CardSection() {
   return (
     <div>
       <div className={styles.title}>WHAT WE DO ?</div>
-      <div className={styles.cardSection}>
-        {CardContent.map((v, i) => {
-          return (
-            <Card
-              key={i}
-              subtitle={v.subtitle}
-              content={v.content}
-              image={v.image}
-            ></Card>
-          );
-        })}
+      <div className={styles.background}>
+        <div className={styles.cardContainer}>
+          {CardContent.map((v, i) => {
+            return (
+              <Card
+                key={i}
+                subtitle={v.subtitle}
+                content={v.content}
+                image={v.image}
+              ></Card>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
