@@ -14,8 +14,11 @@
 }
 
 .welcome {
-  @apply absolute text-white font-normal text-[4.375rem] leading-[6.25rem] tracking-[0.03em] top-[22.3rem] left-[21.625rem];
-  font-family: fredokaOne;
+  @apply absolute top-[22.3rem] left-[21.625rem];
+}
+
+.welcome__text {
+  @apply text-white text-[4.375rem] leading-[6.25rem] tracking-[0.03em] font-fredokaOne;
 }
 
 .text_shadow {

@@ -29,7 +29,10 @@ module.exports = {
       spacing: {
         cardXl: "6.625rem",
       },
+      fontFamily: {
+        fredokaOne: ["fredokaOne"],
+      },
     },
   },
   plugins: [],
-};
+}

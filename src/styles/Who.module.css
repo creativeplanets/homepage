@@ -1,10 +1,14 @@
+.whoDiv {
+  @apply h-[63.25rem];
+}
+
 .background {
-  @apply mx-auto bg-no-repeat bg-contain w-[1231px] h-[866px] flex;
-  background-image: url('../assets/who/background.svg');
+  @apply mx-auto bg-no-repeat bg-contain w-[81rem] h-[54rem] flex;
+  background-image: url("../assets/who/background.svg");
 }
 
 .content {
-  @apply w-[46.875rem] h-[22rem] m-auto;
+  @apply w-[46.875rem] h-[22rem] text-center p-[0.625rem] mt-[18.45rem] ml-[20rem];
 }
 
 .content__title {

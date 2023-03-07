@@ -5,6 +5,7 @@ import Who from "@/components/Who";
 import WhatSection from "@/components/WhatSection";
 import Rocket from "@/assets/scroll-top/Rocket.svg";
 import How from "@/components/How";
+import Footer from "@/components/Footer";
 
 import { useEffect } from "react";
 
@@ -40,6 +41,7 @@ export default function Home() {
         >
           <img src={Rocket.src} alt="scroll-top" />
         </button>
+        <Footer />
       </main>
     </>
   );
