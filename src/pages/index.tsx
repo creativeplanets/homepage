@@ -1,19 +1,19 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import Who from "@/components/Who";
-import WhatSection from "@/components/WhatSection";
-import Rocket from "@/assets/scroll-top/Rocket.svg";
-import How from "@/components/How";
-import Footer from "@/components/Footer";
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import Header from '@/components/Header';
+import Who from '@/components/Who';
+import WhatSection from '@/components/WhatSection';
+import Rocket from '@/assets/scroll-top/Rocket.svg';
+import How from '@/components/How';
+import Footer from '@/components/Footer';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
 
   return (
@@ -31,12 +31,12 @@ export default function Home() {
         <How />
         <button
           onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
           }}
           style={{
-            position: "fixed",
-            bottom: "3rem",
-            right: "3rem",
+            position: 'fixed',
+            bottom: '3rem',
+            right: '3rem',
           }}
         >
           <img src={Rocket.src} alt="scroll-top" />

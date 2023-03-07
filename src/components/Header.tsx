@@ -1,5 +1,5 @@
-import style from "../styles/Header.module.css"
-import Button from "./Button"
+import style from '../styles/Header.module.css';
+import Button from './Button';
 
 export default function Header() {
   return (
@@ -17,5 +17,5 @@ export default function Header() {
         </div>
       </div>
     </>
-  )
+  );
 }

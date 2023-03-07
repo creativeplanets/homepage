@@ -1,26 +1,26 @@
 .background {
-  background-image: url("../assets/card/background.svg");
+  background-image: url('../assets/card/background.svg');
 }
 .title {
-  @apply text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[2.5rem];
+  @apply mb-[2.5rem] p-2.5 text-center text-title font-extrabold tracking-wider text-blue;
 }
 .cardContainer {
-  @apply w-xl grid grid-cols-3 gap-x-cardXl gap-y-10 m-auto py-[3.75rem];
+  @apply m-auto grid w-xl grid-cols-3 gap-x-cardXl gap-y-10 py-[3.75rem];
 }
 .card {
-  @apply bg-white text-black text-center rounded-[1.875rem] shadow-card h-[24rem];
+  @apply h-[24rem] rounded-[1.875rem] bg-white text-center text-black shadow-card;
 }
 .planets {
-  @apply relative z-10 rounded-full mx-auto mb-[-4.0625rem];
+  @apply relative z-10 mx-auto mb-[-4.0625rem] rounded-full;
 }
 .textSection {
-  @apply gap-y-2 grid px-3 pb-12 pt-[5.625rem];
+  @apply grid gap-y-2 px-3 pb-12 pt-[5.625rem];
 }
 .subtitle {
-  @apply text-xl tracking-5 px-2.5 py-1;
+  @apply px-2.5 py-1 text-xl tracking-5;
 }
 .content {
-  @apply text-sm text-434343 tracking-wider leading-8 px-3 py-1;
+  @apply px-3 py-1 text-sm leading-8 tracking-wider text-434343;
 }
 .planet0 {
   filter: drop-shadow(0px 30px 30px rgba(206, 85, 225, 0.2));

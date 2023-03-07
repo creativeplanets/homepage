@@ -3,43 +3,43 @@
 }
 
 .image {
-  @apply w-full bg-no-repeat bg-top bg-cover;
+  @apply w-full bg-cover bg-top bg-no-repeat;
 }
 
 .sky {
   @apply image min-h-[150rem];
-  background-image: url("../assets/header/sky.svg");
+  background-image: url('../assets/header/sky.svg');
   background-attachment: fixed;
 }
 
 .items {
   @apply image absolute top-0 min-h-[150rem];
-  background-image: url("../assets/footer/items.svg");
+  background-image: url('../assets/footer/items.svg');
 }
 
 .contact {
-  @apply absolute w-[53.125rem] h-[36rem] top-[40.5rem] left-[33.5rem] text-center;
+  @apply absolute top-[40.5rem] left-[33.5rem] h-[36rem] w-[53.125rem] text-center;
 }
 
 .contact__title {
-  @apply text-[#27F2FF] font-extrabold text-[3.5rem] leading-[5.625rem] tracking-[0.175rem] m-[10px];
+  @apply m-[10px] text-[3.5rem] font-extrabold leading-[5.625rem] tracking-[0.175rem] text-[#27F2FF];
 }
 
 .contact__caption {
   @apply my-[102px] opacity-50;
-  background-image: url("../assets/footer/hollowText.png");
+  background-image: url('../assets/footer/hollowText.png');
 }
 
 .contact__mail {
-  @apply leading-[30px] tracking-[3px] text-white text-[40px] m-[10px] mb-[53px];
+  @apply m-[10px] mb-[53px] text-[40px] leading-[30px] tracking-[3px] text-white;
 }
 
 .about {
-  @apply absolute w-[1237px] h-[303px] mx-auto left-0 right-0 bottom-[103.5px] text-white;
+  @apply absolute left-0 right-0 bottom-[103.5px] mx-auto h-[303px] w-[1237px] text-white;
 }
 
 .about__leftDiv {
-  @apply relative inline-block w-[390px] h-[303px] text-center;
+  @apply relative inline-block h-[303px] w-[390px] text-center;
 }
 
 .about__logo {
@@ -51,7 +51,7 @@
 }
 
 .about__rightDiv {
-  @apply absolute inline-block w-[375px] h-[255px] right-0 bottom-0 text-[20px];
+  @apply absolute right-0 bottom-0 inline-block h-[255px] w-[375px] text-[20px];
 }
 
 .about__info {
@@ -59,5 +59,5 @@
 }
 
 .about__copyright {
-  @apply absolute leading-[60px] tracking-[-0.33px] mt-[60px] bottom-0;
+  @apply absolute bottom-0 mt-[60px] leading-[60px] tracking-[-0.33px];
 }

@@ -1,4 +1,4 @@
-import styles from "../styles/What.module.css";
+import styles from '../styles/What.module.css';
 interface What {
   image: any;
   subtitle: string;

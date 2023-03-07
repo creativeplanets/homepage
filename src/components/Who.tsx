@@ -1,4 +1,4 @@
-import styles from "../styles/Who.module.css"
+import styles from '../styles/Who.module.css';
 
 export default function Who() {
   return (
@@ -15,5 +15,5 @@ export default function Who() {
         </div>
       </div>
     </>
-  )
+  );
 }

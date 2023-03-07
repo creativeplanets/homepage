@@ -3,16 +3,16 @@
 }
 
 .background {
-  @apply mx-auto bg-no-repeat bg-contain w-[81rem] h-[54rem] flex;
-  background-image: url("../assets/who/background.svg");
+  @apply mx-auto flex h-[54rem] w-[81rem] bg-contain bg-no-repeat;
+  background-image: url('../assets/who/background.svg');
 }
 
 .content {
-  @apply w-[46.875rem] h-[22rem] text-center p-[0.625rem] mt-[18.45rem] ml-[20rem];
+  @apply mt-[18.45rem] ml-[20rem] h-[22rem] w-[46.875rem] p-[0.625rem] text-center;
 }
 
 .content__title {
-  @apply text-[3.5rem] leading-[5.5rem] tracking-[0.05em] text-blue font-extrabold;
+  @apply text-[3.5rem] font-extrabold leading-[5.5rem] tracking-[0.05em] text-blue;
   font-family: baloo;
 }
 

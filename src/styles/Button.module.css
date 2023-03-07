@@ -1,5 +1,5 @@
 .button {
-  @apply m-5 py-3 px-14 text-4xl font-bold leading-64 text-purple rounded-full bg-white active:shadow-none active:-translate-x-[10px] active:translate-y-[10px];
+  @apply m-5 rounded-full bg-white py-3 px-14 text-4xl font-bold leading-64 text-purple active:-translate-x-[10px] active:translate-y-[10px] active:shadow-none;
   box-shadow: -10px 10px 0 0 #ff00a6;
 }
 
@@ -11,6 +11,6 @@
 
 .corner::before {
   @apply absolute top-[-50px] right-0 h-[50px] w-[30px] rounded-br-[30px] bg-transparent;
-  content: "";
+  content: '';
   box-shadow: 0 27px 0 0 white;
 }

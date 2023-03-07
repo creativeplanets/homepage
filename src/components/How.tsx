@@ -1,5 +1,5 @@
-import styles from "../styles/How.module.css";
-import Discovery from "../assets/flow/Discovery.svg";
+import styles from '../styles/How.module.css';
+import Discovery from '../assets/flow/Discovery.svg';
 
 interface How {}
 
