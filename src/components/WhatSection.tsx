@@ -65,6 +65,7 @@ export default function WhatSection() {
                 subtitle={v.subtitle}
                 content={v.content}
                 image={v.image}
+                planetClass={`${styles[`planet${i}`]}`}
               ></Card>
             );
           })}

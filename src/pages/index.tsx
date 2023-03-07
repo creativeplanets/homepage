@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Who from "@/components/Who";
 import WhatSection from "@/components/WhatSection";
@@ -34,7 +32,7 @@ export default function Home() {
             margin: "48px",
           }}
           component={
-            <Image src={Rocket} alt="scrollTop" width={52} height={131} />
+            <img src={Rocket.src} alt="scrollTop" width="52" height="131" />
           }
         />
       </main>

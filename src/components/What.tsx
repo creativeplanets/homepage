@@ -1,20 +1,20 @@
 import styles from "../styles/What.module.css";
-import Image from "next/image";
 interface What {
   image: any;
   subtitle: string;
   content: string;
+  planetClass: string;
 }
 
 export default function What(props: What) {
   return (
     <div>
-      <Image
-        className={styles.planets}
-        src={props.image}
+      <img
+        className={`${styles.planets} ${props.planetClass}`}
+        src={props.image.src}
         alt="props.image"
-        width={130}
-        height={130}
+        width="130"
+        height="130"
       />
       <div className={styles.card}>
         <div className={styles.textSection}>
