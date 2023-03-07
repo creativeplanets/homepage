@@ -3,13 +3,18 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Who from "@/components/Who";
 import WhatSection from "@/components/WhatSection";
-import ScrollToTop from "react-scroll-to-top";
 import Rocket from "@/assets/scroll-top/Rocket.svg";
 import How from "@/components/How";
+
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <Head>
@@ -23,18 +28,18 @@ export default function Home() {
         <Who />
         <WhatSection />
         <How />
-        <ScrollToTop
-          smooth
-          style={{
-            background: "transparent",
-            boxShadow: "none",
-            right: "0",
-            margin: "48px",
+        <button
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
-          component={
-            <img src={Rocket.src} alt="scrollTop" width="52" height="131" />
-          }
-        />
+          style={{
+            position: "fixed",
+            bottom: "3rem",
+            right: "3rem",
+          }}
+        >
+          <img src={Rocket.src} alt="scroll-top" />
+        </button>
       </main>
     </>
   );
