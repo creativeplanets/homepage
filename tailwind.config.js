@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         purple: "#FF00A6",
         blue: "#37538A",
-        434343: "#434343",
+        gray: "#434343",
       },
       fontSize: {
         title: "3.5rem",

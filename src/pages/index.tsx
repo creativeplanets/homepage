@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Who from "@/components/Who";
@@ -6,8 +7,6 @@ import WhatSection from "@/components/WhatSection";
 import Rocket from "@/assets/scroll-top/Rocket.svg";
 import How from "@/components/How";
 import Footer from "@/components/Footer";
-
-import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,13 +29,9 @@ export default function Home() {
         <WhatSection />
         <How />
         <button
+          className="fixed z-10 right-12 bottom-12"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-          }}
-          style={{
-            position: "fixed",
-            bottom: "3rem",
-            right: "3rem",
           }}
         >
           <img src={Rocket.src} alt="scroll-top" />

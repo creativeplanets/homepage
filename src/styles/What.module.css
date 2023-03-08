@@ -1,5 +1,5 @@
 .background {
-  background-image: url("../assets/card/background.svg");
+  background-image: url("../assets/what/background.svg");
 }
 .title {
   @apply text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[2.5rem];
@@ -20,7 +20,7 @@
   @apply text-xl tracking-5 px-2.5 py-1;
 }
 .content {
-  @apply text-sm text-434343 tracking-wider leading-8 px-3 py-1;
+  @apply text-sm text-gray tracking-wider leading-8 px-3 py-1;
 }
 .planet0 {
   filter: drop-shadow(0px 30px 30px rgba(206, 85, 225, 0.2));
