@@ -1,18 +1,18 @@
-import Head from "next/head";
-import { useEffect } from "react";
-import { Inter } from "next/font/google";
-import Header from "@/components/Header";
-import Who from "@/components/Who";
-import WhatSection from "@/components/WhatSection";
-import Rocket from "@/assets/scroll-top/Rocket.svg";
-import How from "@/components/How";
-import Footer from "@/components/Footer";
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { Inter } from 'next/font/google';
+import Header from '@/components/Header';
+import Who from '@/components/Who';
+import WhatSection from '@/components/WhatSection';
+import Rocket from '@/assets/scroll-top/Rocket.svg';
+import How from '@/components/How';
+import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
 
   return (
@@ -29,9 +29,9 @@ export default function Home() {
         <WhatSection />
         <How />
         <button
-          className="fixed z-10 right-12 bottom-12"
+          className="fixed right-12 bottom-12 z-10"
           onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
           }}
         >
           <img src={Rocket.src} alt="scroll-top" />

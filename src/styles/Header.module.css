@@ -1,5 +1,5 @@
 .image {
-  @apply w-full bg-no-repeat bg-top bg-cover;
+  @apply w-full bg-cover bg-top bg-no-repeat;
 }
 
 .sky {
@@ -18,7 +18,7 @@
 }
 
 .welcome__text {
-  @apply text-white text-[4.375rem] leading-[6.25rem] tracking-[0.03em] font-fredokaOne;
+  @apply font-fredokaOne text-[4.375rem] leading-[6.25rem] tracking-[0.03em] text-white;
 }
 
 .text_shadow {
