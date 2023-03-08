@@ -1,14 +1,16 @@
 .flowContainer {
   @apply flex items-start w-xl mx-auto relative my-[13.4375rem];
+  height: 600vh;
 }
-.left {
-  @apply ml-[-5.0625rem];
+.planet {
+  @apply sticky top-[150px] ml-[-5.0625rem];
 }
 .right {
   @apply ml-[8.75rem];
+  height: 560vh;
 }
 .title {
-  @apply text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[100px];
+  @apply sticky z-20 top-[150px] text-title text-blue text-center font-extrabold tracking-wider p-2.5 mb-[100px];
 }
 .body {
   @apply relative z-10 text-center text-gray p-2.5;
@@ -17,7 +19,7 @@
   @apply text-2xl tracking-5 p-2.5;
 }
 .content {
-  @apply text-lg leading-[50px] tracking-5 p-2.5 w-[24.5625rem];
+  @apply text-lg leading-[50px] tracking-5 p-2.5 w-[29.375rem];
 }
 .verticalLine {
   @apply h-16 border-r border-[#888888] translate-x-[-50%] my-[16px];
