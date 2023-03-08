@@ -35,9 +35,7 @@ export default function Footer() {
               <br />
               mors.chang@iisigroup.com
             </div>
-            <div className={style.about__copyright}>
-              Copyright © 2023 IISI.
-            </div>
+            <div className={style.about__copyright}>Copyright © 2023 IISI.</div>
           </div>
         </div>
       </div>
