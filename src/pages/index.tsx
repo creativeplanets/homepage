@@ -6,7 +6,6 @@ import WhatSection from '@/components/WhatSection';
 import How from '@/components/How';
 import Footer from '@/components/Footer';
 import ScrollTop from '@/components/ScrollTop';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {

@@ -6,20 +6,20 @@
   @apply md:w-md;
 }
 .container_lg {
-  @apply lg:w-lg;
+  @apply lg:w-lg lg:py-[120px];
 }
 .container_2xl {
-  @apply 2xl:w-xxl;
+  @apply 2xl:w-xxl 2xl:py-[215px];
 }
 .container {
   @apply container_sm container_md container_lg container_2xl
-  m-auto;
+  m-auto h-[350vh];
 }
 /*#endregion */
 
 /*#region title*/
 .title_sm {
-  @apply mb-[38px] p-2.5 text-center
+  @apply sticky top-[5%] mb-[38px] p-2.5 text-center
   text-[2rem] font-extrabold tracking-wider text-blue lg:hidden;
 }
 .title_lg {
@@ -40,20 +40,31 @@
 
 /* #region flow */
 .flow {
-  @apply flex flex-col justify-between lg:flex-row;
+  @apply sticky top-[15%] flex flex-col justify-between lg:flex-row;
 }
 /* #region planet */
-.planet_sm {
-  @apply w-[80%];
+.left_sm {
+  @apply mx-auto w-[80%];
 }
-.planet_lg {
-  @apply lg:w-[50%];
+.left_lg {
+  @apply lg:mt-10 lg:ml-0 lg:w-[50%];
 }
-.planet_2xl {
+.left_2xl {
   @apply 2xl:max-w-[628px];
 }
+.left {
+  @apply left_sm left_lg left_2xl;
+}
+/*#endregion */
 .planet {
-  @apply planet_sm planet_lg planet_2xl mx-auto;
+  @apply flex items-center justify-center;
+}
+/* #region inner */
+.planet__inner {
+  @apply absolute h-[28%] lg:h-[35%];
+}
+.planet__cycle {
+  @apply absolute top-16;
 }
 /*#endregion */
 
@@ -69,6 +80,11 @@
 }
 .right {
   @apply right_sm right_lg right_2xl text-center;
+}
+/* #region detail */
+
+.detail {
+  position: relative !important;
 }
 
 /* #region subtitle */
@@ -114,6 +130,7 @@
 .content {
   @apply content_sm content_lg content_2xl p-2.5 tracking-5;
 }
+/*#endregion */
 /*#endregion */
 /*#endregion */
 /*#endregion */
