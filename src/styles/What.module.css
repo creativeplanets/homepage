@@ -1,36 +1,79 @@
+/*#region background*/
 .background {
-  background-image: url('../assets/what/background.svg');
+  @apply bg-none;
+}
+@media (min-width: 1024px) {
+  .background {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url('../assets/what/background-lg.svg');
+  }
+}
+@media (min-width: 1536px) {
+  .background {
+    background-image: url('../assets/what/background.svg');
+  }
+}
+/*#endregion */
+
+/*#region title*/
+.title_sm {
+  @apply text-[2rem];
+}
+.title_lg {
+  @apply lg:mb-[1.5rem] lg:text-[2.5rem];
+}
+.title_2xl {
+  @apply 2xl:mb-[2.5rem] 2xl:text-[3.5rem];
 }
 .title {
-  @apply mb-[2.5rem] p-2.5 text-center text-title font-extrabold tracking-wider text-blue;
+  @apply title_sm title_lg title_2xl
+   p-2.5 text-center font-extrabold tracking-wider text-blue;
 }
-.cardContainer {
-  @apply m-auto grid w-xl grid-cols-3 gap-x-cardXl gap-y-10 py-[3.75rem];
+/*#endregion */
+
+/*#region container*/
+.container_sm {
+  @apply w-sm grid-cols-1;
 }
+.container_md {
+  @apply md:w-md;
+}
+.container_lg {
+  @apply lg:w-lg lg:grid-cols-3 lg:gap-x-cardLg;
+}
+.container_2xl {
+  @apply 2xl:w-xxl 2xl:gap-x-card2Xl;
+}
+.container {
+  @apply container_sm container_md container_lg container_2xl
+  m-auto grid gap-y-10 py-[3.75rem];
+}
+/*#endregion */
+
+/*#region card*/
 .card {
   @apply h-[24rem] rounded-[1.875rem] bg-white text-center text-black shadow-card;
 }
 .planets {
   @apply relative z-10 mx-auto mb-[-4.0625rem] rounded-full;
 }
-.textSection {
+.text {
   @apply grid gap-y-2 px-3 pb-12 pt-[5.625rem];
 }
 .subtitle {
   @apply px-2.5 py-1 text-xl tracking-5;
 }
 .content {
-  @apply px-3 py-1 text-sm leading-8 tracking-wider text-gray;
+  @apply px-3 py-1 text-sm leading-8 tracking-wider text-gray lg:leading-7 2xl:leading-8;
 }
-.planet0 {
-  filter: drop-shadow(0px 30px 30px rgba(206, 85, 225, 0.2));
-}
-.planet1 {
-  filter: drop-shadow(0px 30px 30px rgba(85, 141, 225, 0.2));
-}
+/*#endregion */
+
+/*#region planets shadow*/
+.planet0,
 .planet2 {
   filter: drop-shadow(0px 30px 30px rgba(206, 85, 225, 0.2));
 }
+.planet1,
 .planet3 {
   filter: drop-shadow(0px 30px 30px rgba(85, 141, 225, 0.2));
 }
@@ -40,3 +83,4 @@
 .planet5 {
   filter: drop-shadow(0px 30px 30px rgba(225, 161, 85, 0.2));
 }
+/*#endregion */

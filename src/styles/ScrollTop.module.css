@@ -1,0 +1,12 @@
+.rocket_sm {
+  @apply right-4 max-w-[36px];
+}
+.rocket_lg {
+  @apply lg:right-10 lg:max-w-[45px];
+}
+.rocket_2xl {
+  @apply 2xl:right-12 2xl:max-w-[52px];
+}
+.rocket {
+  @apply rocket_sm rocket_lg rocket_2xl fixed bottom-12 z-10;
+}

@@ -17,7 +17,7 @@ export default function What(props: What) {
         height="130"
       />
       <div className={styles.card}>
-        <div className={styles.textSection}>
+        <div className={styles.text}>
           <div className={styles.subtitle}>{props.subtitle}</div>
           <div className={styles.content}>{props.content}</div>
         </div>

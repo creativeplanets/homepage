@@ -11,9 +11,6 @@ module.exports = {
         blue: '#37538A',
         gray: '#434343',
       },
-      fontSize: {
-        title: '3.5rem',
-      },
       lineHeight: {
         64: '4rem',
       },
@@ -24,10 +21,14 @@ module.exports = {
         card: '0 0.25rem 0.625rem rgba(0, 0, 0, 0.15)',
       },
       width: {
-        xl: '63.54166666666667%',
+        xxl: '65%',
+        lg: '75%',
+        md: '55%',
+        sm: '90%',
       },
       spacing: {
-        cardXl: '6.625rem',
+        card2Xl: '5.5%',
+        cardLg: '1.5%',
       },
       fontFamily: {
         fredokaOne: ['fredokaOne'],
