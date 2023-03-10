@@ -1,5 +1,5 @@
 .flowContainer {
-  @apply relative mx-auto flex w-xxl items-start;
+  @apply w-xxl relative mx-auto flex items-start;
   height: 600vh;
 }
 .planet {
