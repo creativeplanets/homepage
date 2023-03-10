@@ -2,13 +2,18 @@
 .background {
   @apply bg-none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1240px) {
   .background {
-    @apply bg-cover bg-center bg-no-repeat;
+    @apply bg-cover bg-bottom bg-no-repeat;
+    background-image: url('../assets/what/background-md.svg');
+  }
+}
+@media (min-width: 1440px) {
+  .background {
     background-image: url('../assets/what/background-lg.svg');
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1920px) {
   .background {
     background-image: url('../assets/what/background.svg');
   }
@@ -16,37 +21,46 @@
 /*#endregion */
 
 /*#region title*/
+.title_xs {
+  @apply mb-12 text-2xl;
+}
 .title_sm {
-  @apply text-[2rem];
+  @apply sm:mb-14 sm:text-[2rem];
+}
+.title_md {
+  @apply md:mb-[50px] md:text-[2.5rem];
 }
 .title_lg {
-  @apply lg:mb-[1.5rem] lg:text-[2.5rem];
+  @apply lg:mb-10 lg:p-2.5 lg:text-5xl;
 }
-.title_2xl {
-  @apply 2xl:mb-[2.5rem] 2xl:text-[3.5rem];
+.title_xl {
+  @apply xl:text-[4rem];
 }
 .title {
-  @apply title_sm title_lg title_2xl
-   p-2.5 text-center font-extrabold tracking-wider text-blue;
+  @apply title_xs title_sm title_md title_lg title_xl
+  text-center font-extrabold tracking-wider text-blue;
 }
 /*#endregion */
 
 /*#region container*/
+.container_xs {
+  @apply w-xs grid-cols-1 gap-y-12;
+}
 .container_sm {
-  @apply w-sm grid-cols-1;
+  @apply sm:w-sm sm:gap-y-[45px];
 }
 .container_md {
-  @apply md:w-md;
+  @apply md:w-md md:grid-cols-3 md:gap-y-[35px] md:gap-x-[18px] md:pt-4;
 }
 .container_lg {
-  @apply lg:w-lg lg:grid-cols-3 lg:gap-x-cardLg;
+  @apply lg:w-lg lg:gap-x-10 lg:pt-5;
 }
-.container_2xl {
-  @apply 2xl:w-xxl 2xl:gap-x-card2Xl;
+.container_xl {
+  @apply xl:w-xl xl:gap-y-10 xl:gap-x-[106px] xl:pt-[4rem];
 }
 .container {
-  @apply container_sm container_md container_lg container_2xl
-  m-auto grid gap-y-10 py-[3.75rem];
+  @apply container_xs container_sm container_md container_lg container_xl
+  m-auto grid;
 }
 /*#endregion */
 
@@ -55,32 +69,51 @@
   @apply h-[24rem] rounded-[1.875rem] bg-white text-center text-black shadow-card;
 }
 .planets {
-  @apply relative z-10 mx-auto mb-[-4.0625rem] rounded-full;
+  @apply mx-auto mb-[-65px] rounded-full;
 }
 .text {
-  @apply grid gap-y-2 px-3 pb-12 pt-[5.625rem];
+  @apply grid gap-y-2 px-3 pb-12 pt-[120px] md:pt-16 lg:pt-[90px];
+}
+.subtitle_sm {
+  @apply sm:text-xl;
+}
+.subtitle_md {
+  @apply md:text-lg;
+}
+.subtitle_lg {
+  @apply lg:text-xl;
 }
 .subtitle {
-  @apply px-2.5 py-1 text-xl tracking-5;
+  @apply subtitle_sm subtitle_md subtitle_lg px-2.5 py-1 text-lg tracking-5;
+}
+.content_sm {
+  @apply sm:text-sm sm:leading-8;
+}
+.content_md {
+  @apply md:leading-7;
+}
+.content_lg {
+  @apply lg:leading-8;
 }
 .content {
-  @apply px-3 py-1 text-sm leading-8 tracking-wider text-gray lg:leading-7 2xl:leading-8;
+  @apply content_sm content_md content_lg 
+  px-3 py-1 text-xs leading-8 tracking-wider text-gray;
 }
 /*#endregion */
 
 /*#region planets shadow*/
-.planet0,
-.planet2 {
+.card__planet0,
+.card__planet2 {
   filter: drop-shadow(0px 30px 30px rgba(206, 85, 225, 0.2));
 }
-.planet1,
-.planet3 {
+.card__planet1,
+.card__planet3 {
   filter: drop-shadow(0px 30px 30px rgba(85, 141, 225, 0.2));
 }
-.planet4 {
+.card__planet4 {
   filter: drop-shadow(0px 30px 30px rgba(85, 225, 175, 0.2));
 }
-.planet5 {
+.card__planet5 {
   filter: drop-shadow(0px 30px 30px rgba(225, 161, 85, 0.2));
 }
 /*#endregion */

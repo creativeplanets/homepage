@@ -1,6 +1,9 @@
 /*#region container*/
+.container_xs {
+  @apply w-xs;
+}
 .container_sm {
-  @apply w-sm;
+  @apply sm:w-sm;
 }
 .container_md {
   @apply md:w-md;
@@ -8,30 +11,37 @@
 .container_lg {
   @apply lg:w-lg lg:py-[120px];
 }
-.container_2xl {
-  @apply 2xl:w-xxl 2xl:py-[215px];
+.container_xl {
+  @apply xl:w-xl xl:py-[215px];
 }
 .container {
-  @apply container_sm container_md container_lg container_2xl
-  m-auto h-[350vh];
+  @apply container_xs container_sm container_md container_lg container_xl
+  m-auto h-[380vh];
 }
 /*#endregion */
 
 /*#region title*/
+.title_xs {
+  @apply title_sm sticky top-[5%] mb-12 p-2.5 text-center 
+  text-2xl font-extrabold tracking-wider text-blue lg:hidden;
+}
 .title_sm {
-  @apply sticky top-[5%] mb-[38px] p-2.5 text-center
-  text-[2rem] font-extrabold tracking-wider text-blue lg:hidden;
+  @apply sm:mb-14 sm:text-[2rem];
+}
+.title_md {
+  @apply md:text-[2.5rem];
 }
 .title_lg {
-  @apply lg:mb-6 lg:text-[2.5rem];
+  @apply lg:mb-6;
 }
-.title_2xl {
-  @apply 2xl:mb-16 2xl:text-[3.5rem];
+.title_xl {
+  @apply xl:mb-16 xl:text-[3.5rem];
 }
 .title {
-  @apply title_lg title_2xl p-2.5 text-center font-extrabold tracking-wider text-blue;
+  @apply title_md title_lg title_xl 
+  p-2.5 text-center font-extrabold tracking-wider text-blue;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .title {
     @apply hidden;
   }
@@ -42,7 +52,7 @@
 .flow {
   @apply sticky top-[15%] flex flex-col justify-between lg:flex-row;
 }
-/* #region planet */
+/* #region left */
 .left_sm {
   @apply mx-auto w-[80%];
 }
@@ -61,10 +71,10 @@
 }
 /* #region inner */
 .planet__inner {
-  @apply absolute h-[28%] lg:h-[35%];
+  @apply absolute h-[35%];
 }
 .planet__cycle {
-  @apply absolute top-16;
+  @apply absolute;
 }
 /*#endregion */
 

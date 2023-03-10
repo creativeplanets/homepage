@@ -34,14 +34,11 @@ module.exports = {
         card: '0 0.25rem 0.625rem rgba(0, 0, 0, 0.15)',
       },
       width: {
-        xxl: '65%',
-        lg: '75%',
-        md: '55%',
-        sm: '90%',
-      },
-      spacing: {
-        card2Xl: '5.5%',
-        cardLg: '1.5%',
+        xs: '91.39%',
+        sm: '58.33%',
+        md: '67.74%',
+        lg: '72.22%',
+        xl: '63.54%',
       },
       fontFamily: {
         fredokaOne: ['fredokaOne'],

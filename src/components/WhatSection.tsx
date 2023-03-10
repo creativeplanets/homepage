@@ -54,22 +54,20 @@ const CardContent = [
 
 export default function WhatSection() {
   return (
-    <div>
+    <div className={styles.background}>
       <div className={styles.title}>WHAT WE DO ?</div>
-      <div className={styles.background}>
-        <div className={styles.container}>
-          {CardContent.map((v, i) => {
-            return (
-              <Card
-                key={i}
-                subtitle={v.subtitle}
-                content={v.content}
-                image={v.image}
-                planetClass={`${styles[`card__planet${i}`]}`}
-              ></Card>
-            );
-          })}
-        </div>
+      <div className={styles.container}>
+        {CardContent.map((v, i) => {
+          return (
+            <Card
+              key={i}
+              subtitle={v.subtitle}
+              content={v.content}
+              image={v.image}
+              planetClass={`${styles[`card__planet${i}`]}`}
+            ></Card>
+          );
+        })}
       </div>
     </div>
   );

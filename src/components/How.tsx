@@ -2,14 +2,20 @@ import { useState, useEffect } from 'react';
 
 import styles from '../styles/How.module.css';
 import Planet from '../assets/how/Planet.svg';
-import Cycle from '../assets/how/Cycle.svg';
 
-import Discovery from '../assets/how/Discovery.png';
-import Planning from '../assets/how/Planning.png';
-import Design from '../assets/how/Design.png';
-import Programming from '../assets/how/Programming.png';
-import Testing from '../assets/how/Testing.png';
-import Launch from '../assets/how/Launch.png';
+import Discovery from '../assets/how/Discovery.svg';
+import Planning from '../assets/how/Planning.svg';
+import Design from '../assets/how/Design.svg';
+import Programming from '../assets/how/Programming.svg';
+import Testing from '../assets/how/Testing.svg';
+import Launch from '../assets/how/Launch.svg';
+
+import InnerDiscovery from '../assets/how/Discovery.png';
+import InnerPlanning from '../assets/how/Planning.png';
+import InnerDesign from '../assets/how/Design.png';
+import InnerProgramming from '../assets/how/Programming.png';
+import InnerTesting from '../assets/how/Testing.png';
+import InnerLaunch from '../assets/how/Launch.png';
 
 export default function How() {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -17,55 +23,61 @@ export default function How() {
   const [content, setContent] = useState(
     '在創星的第一步是探索需求，我們需要盡可能多地了解客戶與利害關係人，透過深度的訪談搜集資訊，確立需求與目標，鎖定目標受眾，為整個專案奠定強大的基礎。'
   );
-  const [inner, setInner] = useState(Discovery);
+  const [inner, setInner] = useState(InnerDiscovery);
+  const [cycle, setCycle] = useState(Discovery);
 
   useEffect(() => {
     function handleScroll() {
       const newScrollHeight = window.pageYOffset;
       setScrollHeight(newScrollHeight);
-      let point = 4200;
+      let point = 3700;
 
       if (window.innerWidth <= 1024) {
         point = 6000;
       }
-
       setScrollHeight(newScrollHeight);
-      if (newScrollHeight > point + 1200) {
+      if (newScrollHeight > point + 1500) {
         setSubtitle('正式上線');
         setContent(
           '我們運用探索階段搜集到的資訊做為基礎，在此階段，我們將針對使用者體驗和資訊架構進行設計，包括人物誌、使用者故事、顧客旅程地圖及功能地圖，並繪製線稿進行易用性測試，持續迭代優化，以直觀、引人入勝的方式達到目標。'
         );
-        setInner(Launch);
-      } else if (newScrollHeight > point + 900) {
+        setInner(InnerLaunch);
+        setCycle(Launch);
+      } else if (newScrollHeight > point + 1200) {
         setSubtitle('系統測試');
         setContent(
           '在創星的第一步是探索需求，我們需要盡可能多地了解客戶與利害關係人，透過深度的訪談搜集資訊，確立需求與目標，鎖定目標受眾，為整個專案奠定強大的基礎。'
         );
-        setInner(Testing);
-      } else if (newScrollHeight > point + 600) {
+        setInner(InnerTesting);
+        setCycle(Testing);
+      } else if (newScrollHeight > point + 900) {
         setSubtitle('程式開發');
         setContent(
           '我們運用探索階段搜集到的資訊做為基礎，在此階段，我們將針對使用者體驗和資訊架構進行設計，包括人物誌、使用者故事、顧客旅程地圖及功能地圖，並繪製線稿進行易用性測試，持續迭代優化，以直觀、引人入勝的方式達到目標。'
         );
-        setInner(Programming);
-      } else if (newScrollHeight > point + 300) {
+        setInner(InnerProgramming);
+        setCycle(Programming);
+      } else if (newScrollHeight > point + 600) {
         setSubtitle('視覺設計');
         setContent(
           '在創星的第一步是探索需求，我們需要盡可能多地了解客戶與利害關係人，透過深度的訪談搜集資訊，確立需求與目標，鎖定目標受眾，為整個專案奠定強大的基礎。'
         );
-        setInner(Design);
-      } else if (newScrollHeight > point) {
+        setInner(InnerDesign);
+        setCycle(Design);
+      } else if (newScrollHeight > point + 300) {
         setSubtitle('策略與規劃');
         setContent(
           '我們運用探索階段搜集到的資訊做為基礎，在此階段，我們將針對使用者體驗和資訊架構進行設計，包括人物誌、使用者故事、顧客旅程地圖及功能地圖，並繪製線稿進行易用性測試，持續迭代優化，以直觀、引人入勝的方式達到目標。'
         );
-        setInner(Planning);
-      } else if (newScrollHeight > 3700) {
+        setInner(InnerPlanning);
+        setCycle(Planning);
+      } else if (newScrollHeight > point) {
         setSubtitle('探索需求');
         setContent(
           '在創星的第一步是探索需求，我們需要盡可能多地了解客戶與利害關係人，透過深度的訪談搜集資訊，確立需求與目標，鎖定目標受眾，為整個專案奠定強大的基礎。'
         );
-        setInner(Discovery);
+        setInner(InnerDiscovery);
+        setCycle(Discovery);
       }
     }
     window.addEventListener('scroll', handleScroll);
@@ -73,11 +85,11 @@ export default function How() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const rotateDeg = scrollHeight / 6;
 
-  const rotateDeg = scrollHeight / 10;
   return (
     <div className={styles.container}>
-      <div className={styles.title_sm}>HOW WE DO ?</div>
+      <div className={styles.title_xs}>HOW WE DO ?</div>
       <div className={styles.flow}>
         <div className={styles.left}>
           <div className={styles.planet}>
@@ -88,7 +100,7 @@ export default function How() {
               alt="planet__inner"
             />
             <img
-              src={Cycle.src}
+              src={cycle.src}
               alt="planet__cycle"
               className={styles.planet__cycle}
               style={{ transform: `rotate(${rotateDeg}deg)` }}
