@@ -1,7 +1,7 @@
-import style from '../styles/Footer.module.css';
-import logo from '../assets/footer/logo.svg';
-import Button from './Button';
-import hollowText from '../assets/footer/hollowText.png';
+import style from '@/styles/pages/Homepage/Footer.module.scss';
+import logo from '@/assets/footer/logo.svg';
+import Button from '../Button';
+import hollowText from '@/assets/footer/hollowText.png';
 
 export default function Footer() {
   return (

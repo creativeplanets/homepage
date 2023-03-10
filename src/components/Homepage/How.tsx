@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
 
-import styles from '../styles/How.module.css';
-import Planet from '../assets/how/Planet.svg';
+import styles from '@/styles/pages/Homepage/How.module.scss';
+import Planet from '@/assets/how/Planet.svg';
 
-import Discovery from '../assets/how/Discovery.svg';
-import Planning from '../assets/how/Planning.svg';
-import Design from '../assets/how/Design.svg';
-import Programming from '../assets/how/Programming.svg';
-import Testing from '../assets/how/Testing.svg';
-import Launch from '../assets/how/Launch.svg';
+import Discovery from '@/assets/how/Discovery.svg';
+import Planning from '@/assets/how/Planning.svg';
+import Design from '@/assets/how/Design.svg';
+import Programming from '@/assets/how/Programming.svg';
+import Testing from '@/assets/how/Testing.svg';
+import Launch from '@/assets/how/Launch.svg';
 
-import InnerDiscovery from '../assets/how/Discovery.png';
-import InnerPlanning from '../assets/how/Planning.png';
-import InnerDesign from '../assets/how/Design.png';
-import InnerProgramming from '../assets/how/Programming.png';
-import InnerTesting from '../assets/how/Testing.png';
-import InnerLaunch from '../assets/how/Launch.png';
+import InnerDiscovery from '@/assets/how/Discovery.png';
+import InnerPlanning from '@/assets/how/Planning.png';
+import InnerDesign from '@/assets/how/Design.png';
+import InnerProgramming from '@/assets/how/Programming.png';
+import InnerTesting from '@/assets/how/Testing.png';
+import InnerLaunch from '@/assets/how/Launch.png';
 
 export default function How() {
   const [scrollHeight, setScrollHeight] = useState(0);

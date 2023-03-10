@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
-import Header from '@/components/Header';
-import Who from '@/components/Who';
-import WhatSection from '@/components/WhatSection';
-import How from '@/components/How';
-import Footer from '@/components/Footer';
+import Header from '@/components/Homepage/Header';
+import Who from '@/components/Homepage/Who';
+import WhatSection from '@/components/Homepage/WhatSection';
+import How from '@/components/Homepage/How';
+import Footer from '@/components/Homepage/Footer';
 import ScrollTop from '@/components/ScrollTop';
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +23,7 @@ export default function Home() {
         <WhatSection />
         <How />
         <Footer />
-        <ScrollTop />
+        {/* <ScrollTop /> */}
       </main>
     </>
   );

@@ -1,4 +1,4 @@
-import styles from '../styles/Who.module.css';
+import styles from '@/styles/pages/Homepage/Who.module.scss';
 
 export default function Who() {
   return (

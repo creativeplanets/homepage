@@ -1,3 +1,5 @@
+$assetPath: '../../../assets/';
+
 /*#region background*/
 .background {
   @apply bg-none;
@@ -5,17 +7,17 @@
 @media (min-width: 1240px) {
   .background {
     @apply bg-cover bg-bottom bg-no-repeat;
-    background-image: url('../assets/what/background-md.svg');
+    background-image: url('#{$assetPath}/what/background-md.svg');
   }
 }
 @media (min-width: 1440px) {
   .background {
-    background-image: url('../assets/what/background-lg.svg');
+    background-image: url('#{$assetPath}/what/background-lg.svg');
   }
 }
 @media (min-width: 1920px) {
   .background {
-    background-image: url('../assets/what/background.svg');
+    background-image: url('#{$assetPath}/what/background.svg');
   }
 }
 /*#endregion */

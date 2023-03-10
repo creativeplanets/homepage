@@ -1,3 +1,5 @@
+$assetPath: '../../../assets/';
+
 .footerDiv {
   @apply relative;
 }
@@ -12,23 +14,23 @@
 
 /*#region sky*/
 .sky_xs {
-  @apply bg-[url('../assets/header/sky_xs.svg')];
+  @apply bg-[url('#{$assetPath}/header/sky_xs.svg')];
 }
 
 .sky_sm {
-  @apply bg-[url('../assets/header/sky_sm.svg')];
+  @apply bg-[url('#{$assetPath}/header/sky_sm.svg')];
 }
 
 .sky_md {
-  @apply lg:bg-[url('../assets/header/sky_md.svg')];
+  @apply lg:bg-[url('#{$assetPath}/header/sky_md.svg')];
 }
 
 .sky_lg {
-  @apply lg:bg-[url('../assets/header/sky_lg.svg')];
+  @apply lg:bg-[url('#{$assetPath}/header/sky_lg.svg')];
 }
 
 .sky_2xl {
-  @apply lg:bg-[url('../assets/header/sky_xl.svg')];
+  @apply lg:bg-[url('#{$assetPath}/header/sky_xl.svg')];
 }
 
 .sky {
@@ -39,23 +41,23 @@
 
 /*#region items*/
 .items_xs {
-  @apply bg-[url('../assets/footer/items_xs.svg')];
+  @apply bg-[url('#{$assetPath}/footer/items_xs.svg')];
 }
 
 .items_sm {
-  @apply bg-[url('../assets/footer/items_sm.svg')];
+  @apply bg-[url('#{$assetPath}/footer/items_sm.svg')];
 }
 
 .items_md {
-  @apply lg:bg-[url('../assets/footer/items_md.svg')];
+  @apply lg:bg-[url('#{$assetPath}/footer/items_md.svg')];
 }
 
 .items_lg {
-  @apply lg:bg-[url('../assets/footer/items_lg.svg')];
+  @apply lg:bg-[url('#{$assetPath}/footer/items_lg.svg')];
 }
 
 .items_2xl {
-  @apply lg:bg-[url('../assets/footer/items_2xl.svg')];
+  @apply lg:bg-[url('#{$assetPath}/footer/items_2xl.svg')];
 }
 
 .items {
@@ -126,7 +128,7 @@
 
 .contact__caption {
   @apply contact__caption_xs contact__caption_sm contact__caption_md contact__caption_lg contact__caption_2xl mx-auto bg-contain opacity-50;
-  background-image: url('../assets/footer/hollowText.png');
+  background-image: url('#{$assetPath}/footer/hollowText.png');
 }
 /*#endregion*/
 
