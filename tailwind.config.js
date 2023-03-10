@@ -6,6 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '600px',
+        // => @media (min-width: 600px) { ... }
+
+        md: '1240px',
+        // => @media (min-width:1240px) { ... }
+
+        lg: '1440px',
+        // => @media (min-width: 1440px) { ... }
+
+        xl: '1920px',
+        // => @media (min-width: 1920px) { ... }
+      },
       colors: {
         purple: '#FF00A6',
         blue: '#37538A',
