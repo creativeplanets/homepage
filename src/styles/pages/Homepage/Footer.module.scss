@@ -5,7 +5,7 @@ $assetPath: '../../../assets/';
 }
 
 .footerHeight {
-  @apply h-[278vw] sm:h-[208vw] lg:h-[130vw] 2xl:h-[124vw];
+  @apply h-[278vw] max-h-[1250px] sm:h-[208vw] sm:max-h-[1625px] md:h-[123vw] md:max-h-[1948px] lg:h-[135vw] lg:max-h-[2400px] xl:max-h-[124vw];
 }
 
 .image {
