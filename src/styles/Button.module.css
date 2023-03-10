@@ -1,5 +1,21 @@
+.button_xs {
+  @apply px-[33px] py-[8px] text-[20px] leading-[32px];
+}
+
+.button_sm {
+  @apply sm:px-[30px] sm:text-[24px] sm:leading-[38px];
+}
+
+.button_md {
+  @apply md:py-[6px];
+}
+
+.button_xl {
+  @apply xl:py-[9px] xl:px-[44px] xl:text-[32px] xl:leading-[51px];
+}
+
 .button {
-  @apply m-5 rounded-full bg-white py-3 px-14 text-4xl font-bold leading-64 text-purple active:-translate-x-[10px] active:translate-y-[10px] active:shadow-none;
+  @apply button_xs button_sm button_md button_xl rounded-full bg-white font-bold  text-purple active:-translate-x-[10px] active:translate-y-[10px] active:shadow-none;
   box-shadow: -10px 10px 0 0 #ff00a6;
 }
 

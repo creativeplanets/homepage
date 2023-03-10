@@ -1,21 +1,104 @@
 .whoDiv {
-  @apply h-[63.25rem];
+  /* @apply h-[148vw] max-h-[1012px] pt-[60px] lg:h-[61vw] 2xl:h-[60vw]; */
+}
+
+/*#region background*/
+.background_xs {
+  @apply mt-[60px] h-[132vw] max-h-[480px] bg-[url('../assets/who/background_xs.svg')] bg-[length:auto_100%];
+}
+
+.background_sm {
+  @apply sm:h-[64vw] sm:max-h-[500px] sm:bg-[url('../assets/who/background_sm.svg')];
+}
+
+.background_md {
+  @apply md:h-[50vw] md:max-h-[620px] md:bg-[url('../assets/who/background.svg')];
+}
+
+.background_lg {
+  @apply lg:max-h-[720px];
+}
+
+.background_xl {
+  @apply xl:h-[45vw] xl:max-h-[860px];
 }
 
 .background {
-  @apply mx-auto flex h-[54rem] w-[81rem] bg-contain bg-no-repeat;
-  background-image: url('../assets/who/background.svg');
+  @apply background_xs background_sm background_md background_lg background_xl flex bg-center bg-no-repeat;
+}
+/*#endregion*/
+
+/*#region content*/
+.content_xs {
+  @apply mt-[95.64px] w-[80vw];
+}
+
+.content_sm {
+  @apply sm:mt-[99px] sm:w-[67vw];
+}
+
+.content_md {
+  @apply md:mt-[218px]  md:w-[43vw];
+}
+
+.content_lg {
+  @apply lg:ml-[29%] lg:mt-[16vw] lg:w-[50%];
+}
+
+.content_xl {
+  @apply lg:w-[47%] xl:mt-[15vw];
+}
+
+.content_2xl {
+  @apply 2xl:mt-[16vw] 2xl:h-[45vw] 2xl:max-h-[860px];
 }
 
 .content {
-  @apply mt-[18.45rem] ml-[20rem] h-[22rem] w-[46.875rem] p-[0.625rem] text-center;
+  @apply content_xs content_sm content_md  content_lg content_2xl content_sm content_xl mx-auto;
+}
+/*#endregion*/
+
+/*#region content__title*/
+.content__title_xs {
+  @apply mb-6 text-right text-[24px] leading-[38px];
+}
+
+.content__title_sm {
+  @apply sm:mb-4;
+}
+
+.content__title_lg {
+  @apply lg:mb-0 lg:text-center lg:text-[40px] lg:leading-[64px];
+}
+
+.content__title_xl {
+  @apply xl:mb-5;
+}
+
+.content__title_2xl {
+  @apply 2xl:mb-0 2xl:text-[64px] 2xl:leading-[70px];
 }
 
 .content__title {
-  @apply text-[3.5rem] font-extrabold leading-[5.5rem] tracking-[0.05em] text-blue;
+  @apply content__title_xs content__title_sm content__title_lg content__title_xl content__title_2xl font-extrabold tracking-[0.05%] text-blue;
   font-family: baloo;
+}
+/*#endregion*/
+
+/*#region content__paragraph*/
+.content__paragraph_xs {
+  @apply text-[14px] leading-[30px];
+}
+
+.content__paragraph_lg {
+  @apply lg:text-[16px] lg:leading-[40px];
+}
+
+.content__paragraph_2xl {
+  @apply 2xl:text-[18px] 2xl:leading-[60px];
 }
 
 .content__paragraph {
-  @apply text-[1.125rem] leading-[3.75rem] tracking-[0.05em] text-blue;
+  @apply content__paragraph_xs content__paragraph_lg content__paragraph_2xl tracking-[0.05%] text-blue;
 }
+/*#endregion*/

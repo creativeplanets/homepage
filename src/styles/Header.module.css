@@ -1,26 +1,164 @@
+.headerHeight {
+  @apply h-[265vw] max-h-[960px] sm:h-[176vw] sm:max-h-[1060px] md:h-[97vw] md:max-h-[1210px] lg:h-[87vw] lg:max-h-[1395px] xl:max-h-[1670px];
+}
+
 .image {
-  @apply w-full bg-cover bg-top bg-no-repeat;
+  @apply w-full bg-cover bg-bottom bg-no-repeat;
+}
+
+/*#region sky*/
+.sky_xs {
+  @apply bg-[url('../assets/header/sky_xs.svg')];
+}
+
+.sky_sm {
+  @apply sm:bg-[url('../assets/header/sky_sm.svg')];
+}
+
+.sky_md {
+  @apply md:bg-[url('../assets/header/sky_md.svg')];
+}
+
+.sky_lg {
+  @apply lg:bg-[url('../assets/header/sky_lg.svg')];
+}
+
+.sky_xl {
+  @apply xl:bg-[url('../assets/header/sky_xl.svg')];
 }
 
 .sky {
-  @apply image min-h-[105rem];
-  background-image: url('../assets/header/sky.svg');
+  @apply headerHeight image sky_xs sky_sm sky_md sky_lg sky_xl h-full;
   background-attachment: fixed;
+}
+/*#endregion*/
+
+/*#region items*/
+.items_xs {
+  @apply bg-[url('../assets/header/items_xs.svg')];
+}
+
+.items_sm {
+  @apply sm:bg-[url('../assets/header/items_sm.svg')];
+}
+
+.items_md {
+  @apply md:bg-[url('../assets/header/items_md.svg')];
+}
+
+.items_lg {
+  @apply lg:bg-[url('../assets/header/items_lg.svg')];
+}
+
+.items_xl {
+  @apply xl:bg-[url('../assets/header/items_xl.svg')];
 }
 
 .items {
-  @apply image absolute top-0 min-h-[105rem];
-  background-image: url('../assets/header/items.svg');
+  @apply headerHeight image items_xs items_sm items_md items_lg items_xl absolute top-0;
+}
+/*#endregion*/
+
+/*#region welcome*/
+.welcome_xs {
+  @apply top-[450px] left-[10vw];
+}
+
+.welcome_sm {
+  @apply sm:top-[499px];
+}
+
+.welcome_md {
+  @apply md:top-[255px] md:left-[18vw];
+}
+
+.welcome_lg {
+  @apply lg:top-[313px] lg:left-[15vw];
+}
+
+.welcome_xl {
+  @apply xl:top-[357px] xl:left-[18vw];
 }
 
 .welcome {
-  @apply absolute top-[22.3rem] left-[21.625rem];
+  @apply welcome_xs welcome_sm welcome_md welcome_lg welcome_xl absolute;
+}
+/*#endregion*/
+
+/*#region welcome__text*/
+.welcome__text_xs {
+  @apply text-[40px] leading-[60px];
+}
+
+.welcome__text_sm {
+  @apply sm:text-[56px] sm:leading-[72px];
+}
+
+.welcome__text_md {
+  @apply md:text-[48px] md:leading-[100px];
+}
+
+.welcome__text_lg {
+  @apply lg:text-[56px];
+}
+
+.welcome__text_xl {
+  @apply xl:text-[70px] xl:leading-[130px];
 }
 
 .welcome__text {
-  @apply font-fredokaOne text-[4.375rem] leading-[6.25rem] tracking-[0.03em] text-white;
+  @apply welcome__text_xs welcome__text_sm welcome__text_md welcome__text_lg welcome__text_xl font-fredokaOne tracking-[0.03%] text-white;
+}
+/*#endregion*/
+
+/*#region text__shadow*/
+.text__shadow_xs {
+  @apply text-[50px];
 }
 
-.text_shadow {
-  @apply drop-shadow-[-5px_5px_#ff00a6];
+.text__shadow_sm {
+  @apply sm:text-[64px];
 }
+
+.text__shadow_md {
+  @apply md:text-[56px];
+}
+
+.text__shadow_lg {
+  @apply lg:text-[64px];
+}
+
+.text__shadow_xl {
+  @apply xl:text-[80px];
+}
+
+.text__shadow {
+  @apply text__shadow_xs text__shadow_sm text__shadow_md text__shadow_lg text__shadow_xl drop-shadow-[-5px_5px_#ff00a6];
+}
+/*#endregion*/
+
+/*#region welcome__button*/
+.welcome__button_xs {
+  @apply mt-[32px];
+}
+
+.welcome__button_sm {
+  @apply sm:mx-auto sm:mt-[35px] sm:flex;
+}
+
+.welcome__button_md {
+  @apply md:mt-[23px];
+}
+
+.welcome__button_lg {
+  @apply lg:mt-[42px];
+}
+
+.welcome__button_xl {
+  @apply xl:mt-[77px];
+}
+
+.welcome__button {
+  @apply welcome__button_xs welcome__button_sm welcome__button_md welcome__button_lg welcome__button_xl;
+}
+/*#endregion*/

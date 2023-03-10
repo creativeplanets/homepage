@@ -10,11 +10,9 @@ export default function Header() {
         <div className={style.welcome__text}>
           Welcome to
           <br />
-          our <span className={style.text_shadow}>Planets</span> !
+          our <span className={style.text__shadow}>Planets</span> !
         </div>
-        <div>
-          <Button title="See more"></Button>
-        </div>
+        <Button title="See more" class={style.welcome__button}></Button>
       </div>
     </>
   );
