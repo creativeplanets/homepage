@@ -1,18 +1,20 @@
+$assetPath: '../../../assets/';
+
 .whoDiv {
   /* @apply h-[148vw] max-h-[1012px] pt-[60px] lg:h-[61vw] 2xl:h-[60vw]; */
 }
 
 /*#region background*/
 .background_xs {
-  @apply mt-[60px] h-[132vw] max-h-[480px] bg-[url('../assets/who/background_xs.svg')] bg-[length:auto_100%];
+  @apply mt-[60px] h-[132vw] max-h-[480px] bg-[url('#{$assetPath}/who/background_xs.svg')] bg-[length:auto_100%];
 }
 
 .background_sm {
-  @apply sm:h-[64vw] sm:max-h-[500px] sm:bg-[url('../assets/who/background_sm.svg')];
+  @apply sm:h-[64vw] sm:max-h-[500px] sm:bg-[url('#{$assetPath}/who/background_sm.svg')];
 }
 
 .background_md {
-  @apply md:h-[50vw] md:max-h-[620px] md:bg-[url('../assets/who/background.svg')];
+  @apply md:h-[50vw] md:max-h-[620px] md:bg-[url('#{$assetPath}/who/background.svg')];
 }
 
 .background_lg {

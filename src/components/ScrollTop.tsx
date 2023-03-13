@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import styles from '../styles/ScrollTop.module.css';
+import styles from '@/styles/components/ScrollTop.module.scss';
 import Rocket from '@/assets/scroll-top/Rocket.svg';
 
 export default function ScrollTop() {

@@ -1,11 +1,11 @@
-import styles from '../styles/What.module.css';
-import Card from '@/components/What';
-import planet1 from '../assets/what/planet1.svg';
-import planet2 from '../assets/what/planet2.svg';
-import planet3 from '../assets/what/planet3.svg';
-import planet4 from '../assets/what/planet4.svg';
-import planet5 from '../assets/what/planet5.svg';
-import planet6 from '../assets/what/planet6.svg';
+import styles from '@/styles/pages/Homepage/What.module.scss';
+import Card from '@/components/Homepage/What';
+import planet1 from '@/assets/what/planet1.svg';
+import planet2 from '@/assets/what/planet2.svg';
+import planet3 from '@/assets/what/planet3.svg';
+import planet4 from '@/assets/what/planet4.svg';
+import planet5 from '@/assets/what/planet5.svg';
+import planet6 from '@/assets/what/planet6.svg';
 
 const CardContent = [
   {
