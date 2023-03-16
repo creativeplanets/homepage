@@ -6,6 +6,7 @@ import WhatSection from '@/components/Homepage/WhatSection';
 import How from '@/components/Homepage/How';
 import Footer from '@/components/Homepage/Footer';
 import ScrollTop from '@/components/ScrollTop';
+import LottieTest from '@/components/LottieTest';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <LottieTest />
         <Who />
         <WhatSection />
         <How />
