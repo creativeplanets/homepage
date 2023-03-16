@@ -2,7 +2,7 @@ $assetPath: '../../../assets/';
 
 /*#region background*/
 .background {
-  @apply mt-16 mb-[100px] bg-none;
+  @apply bg-none pt-16 pb-[80px];
 }
 @media (min-width: 1240px) {
   .background {
