@@ -1,3 +1,5 @@
+// @import '../utils.scss';
+
 $assetPath: '../../../assets/';
 
 .headerHeight {
@@ -164,3 +166,63 @@ $assetPath: '../../../assets/';
   @apply welcome__button_xs welcome__button_sm welcome__button_md welcome__button_lg welcome__button_xl;
 }
 /*#endregion*/
+
+$planet: (
+  xs: (
+    w: 550px,
+    h: 294.59px,
+    left: 25px,
+    top: 178px,
+  ),
+  sm: (
+    w: 600px,
+    h: 321.37px,
+    left: 179px,
+    top: 157px,
+  ),
+  md: (
+    w: 550px,
+    h: 294.59px,
+    left: 611px,
+    top: 156px,
+  ),
+  lg: (
+    w: 700px,
+    h: 374.5px,
+    left: 665px,
+    top: 180px,
+  ),
+  xl: (
+    w: 783px,
+    h: 586px,
+    left: 955px,
+    top: 134px,
+  ),
+);
+
+@each $size, $properties in $planet {
+  .planet_#{$size} {
+    @each $key, $value in $properties {
+      $property: $key + '-[' + $value + ']';
+      $style: '';
+
+      @if $size== 'xs' {
+        $style: #{$property};
+      } @else {
+        $style: $size + ':' + $property;
+      }
+
+      @apply #{$style};
+    }
+  }
+}
+// utils.RWDClass('planet',$planet),
+.planet {
+  @extend .planet_xs;
+  @extend .planet_sm;
+  @extend .planet_md;
+  @extend .planet_lg;
+  @extend .planet_xl;
+  position: absolute;
+  z-index: 99;
+}

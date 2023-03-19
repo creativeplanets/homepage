@@ -66,77 +66,219 @@ $assetPath: '../../../assets/';
 /*#endregion*/
 
 /*#region contact*/
-.contact_xs {
-  @apply top-[56vw];
-}
+// .contact_xs {
+//   @apply top-[56vw];
+// }
 
-.contact_sm {
-  @apply sm:top-[38vw];
-}
+// .contact_sm {
+//   @apply sm:top-[38vw];
+// }
 
-.contact_md {
-  @apply md:top-[23vw];
-}
+// .contact_md {
+//   @apply md:top-[23vw];
+// }
 
-.contact_lg {
-  @apply lg:top-[31vw];
-}
+// .contact_lg {
+//   @apply lg:top-[31vw];
+// }
 
-.contact_xl {
-  @apply xl:top-[34vw];
+// .contact_xl {
+//   @apply xl:top-[34vw];
+// }
+
+// .contact {
+//   @apply contact_xs contact_sm contact_md contact_lg contact_xl absolute right-0 left-0 mx-auto h-[36rem] w-[87vw] text-center;
+// }
+$contact: (
+  xs: (
+    w: '285px',
+    h: '200px',
+    top: '202px',
+  ),
+  sm: (
+    w: '333px',
+    h: '302.38px',
+    top: '225.62px',
+  ),
+  md: (
+    w: '618px',
+    h: '333px',
+    top: '280px',
+  ),
+  lg: (
+    w: '732px',
+    h: '480px',
+    top: '449px',
+  ),
+  xl: (
+    w: '850px',
+    h: '577px',
+    top: '648px',
+  ),
+);
+
+@each $size, $properties in $contact {
+  .contact_#{$size} {
+    @each $key, $value in $properties {
+      $property: $key + '-[' + $value + ']';
+      $style: '';
+
+      @if $size== 'xs' {
+        $style: #{$property};
+      } @else {
+        $style: $size + ':' + $property;
+      }
+
+      @apply #{$style};
+    }
+  }
 }
 
 .contact {
-  @apply contact_xs contact_sm contact_md contact_lg contact_xl absolute right-0 left-0 mx-auto h-[36rem] w-[87vw] text-center;
+  @extend .contact_xs;
+  @extend .contact_sm;
+  @extend .contact_md;
+  @extend .contact_lg;
+  @extend .contact_xl;
+  @apply absolute right-0 left-0 mx-auto text-center;
 }
 /*#endregion*/
 
 /*#region contact_title*/
-.contact__title_xs {
-  @apply text-[24px] leading-[38px];
-}
+// .contact__title_xs {
+//   @apply text-[24px] leading-[38px];
+// }
 
-.contact__title_sm {
-  @apply sm:text-[32px] sm:leading-[51px];
-}
+// .contact__title_sm {
+//   @apply sm:text-[32px] sm:leading-[51px];
+// }
 
-.contact__title_md {
-  @apply md:text-[40px] md:leading-[64px];
-}
+// .contact__title_md {
+//   @apply md:text-[40px] md:leading-[64px];
+// }
 
-.contact__title_xl {
-  @apply xl:text-[56px] xl:leading-[90px];
+// .contact__title_xl {
+//   @apply xl:text-[56px] xl:leading-[90px];
+// }
+
+// .contact__title {
+//   @apply contact__title_xs contact__title_sm contact__title_md contact__title_xl font-extrabold tracking-[0.005%] text-[#27F2FF];
+// }
+
+$contact__title: (
+  xs: (
+    text: '24px',
+    leading: '38px',
+  ),
+  sm: (
+    text: '32px',
+    leading: '51px',
+  ),
+  md: (
+    text: '40px',
+    leading: '64px',
+  ),
+  xl: (
+    text: '56px',
+    leading: '90px',
+  ),
+);
+
+@each $size, $properties in $contact__title {
+  .contact__title_#{$size} {
+    @each $key, $value in $properties {
+      $property: $key + '-[' + $value + ']';
+      $style: '';
+
+      @if $size== 'xs' {
+        $style: #{$property};
+      } @else {
+        $style: $size + ':' + $property;
+      }
+
+      @apply #{$style};
+    }
+  }
 }
 
 .contact__title {
-  @apply contact__title_xs contact__title_sm contact__title_md contact__title_xl font-extrabold tracking-[0.005%] text-[#27F2FF];
+  @extend .contact__title_xs;
+  @extend .contact__title_sm;
+  @extend .contact__title_md;
+  @extend .contact__title_xl;
+  @apply font-extrabold tracking-[0.005%] text-[#27F2FF];
 }
 /*#endregion*/
 
 /*#region contact__caption*/
-.contact__caption_xs {
-  @apply mt-[25px] mb-[18px];
-}
+// .contact__caption_xs {
+//   @apply mt-[25px] mb-[18px];
+// }
 
-.contact__caption_sm {
-  @apply sm:mb-[42.8px] sm:mt-[44.5px];
-}
+// .contact__caption_sm {
+//   @apply sm:mb-[42.8px] sm:mt-[44.5px];
+// }
 
-.contact__caption_md {
-  @apply md:mb-[64px] md:mt-[39px];
-}
+// .contact__caption_md {
+//   @apply md:mb-[64px] md:mt-[39px];
+// }
 
-.contact__caption_lg {
-  @apply lg:my-[80px];
-}
+// .contact__caption_lg {
+//   @apply lg:my-[80px];
+// }
 
-.contact__caption_xl {
-  @apply xl:my-[102px];
-}
+// .contact__caption_xl {
+//   @apply xl:my-[102px];
+// }
 
+// .contact__caption {
+//   @apply contact__caption_xs contact__caption_sm contact__caption_md contact__caption_lg contact__caption_xl mx-auto bg-contain opacity-50;
+//   background-image: url('#{$assetPath}/footer/hollowText.png');
+// }
+
+$contact__caption: (
+  xs: (
+    mt: '25px',
+    mb: '18px',
+  ),
+  sm: (
+    mt: '44.5px',
+    mb: '42.8px',
+  ),
+  md: (
+    mt: '39px',
+    mb: '64px',
+  ),
+  lg: (
+    my: '80px',
+  ),
+  xl: (
+    my: '102px',
+  ),
+);
+@each $size, $properties in $contact__caption {
+  .contact__caption_#{$size} {
+    @each $key, $value in $properties {
+      $property: $key + '-[' + $value + ']';
+      $style: '';
+
+      @if $size== 'xs' {
+        $style: #{$property};
+      } @else {
+        $style: $size + ':' + $property;
+      }
+
+      @apply #{$style};
+    }
+  }
+}
 .contact__caption {
-  @apply contact__caption_xs contact__caption_sm contact__caption_md contact__caption_lg contact__caption_xl mx-auto bg-contain opacity-50;
-  background-image: url('#{$assetPath}/footer/hollowText.png');
+  @extend .contact__caption_xs;
+  @extend .contact__caption_sm;
+  @extend .contact__caption_md;
+  @extend .contact__caption_lg;
+  @extend .contact__caption_xl;
+  @apply mx-auto bg-contain opacity-50;
 }
 /*#endregion*/
 

@@ -4,6 +4,7 @@ import Button from '../Button';
 import hollowText from '@/assets/footer/hollowText.png';
 
 export default function Footer() {
+  // const contactCaptionClass = ClassName(contact__caption);
   return (
     <>
       <div className={style.footerDiv}>
@@ -42,3 +43,22 @@ export default function Footer() {
     </>
   );
 }
+
+// const contact__caption = {
+//   common: `mx-auto bg-contain opacity-50`,
+//   xs: { mt: '25px', mb: '18px' },
+//   sm: {
+//     mt: '44.5px',
+//     mb: '42.8px',
+//   },
+//   md: {
+//     mt: '39px',
+//     mb: '64px',
+//   },
+//   lg: {
+//     my: '80px',
+//   },
+//   xl: {
+//     my: '102px',
+//   },
+// };

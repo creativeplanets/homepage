@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+@function RWDClass($name, $schema) {
+  @each $size, $properties in $schema {
+    .#{$name}_#{$size} {
+      @each $key, $value in $properties {
+        $property: $key + '-[' + $value + ']';
+        $style: '';
+
+        @if $size== 'xs' {
+          $style: #{$property};
+        } @else {
+          $style: $size + ':' + $property;
+        }
+
+        @apply #{$style};
+      }
+    }
+  }
+}
+
+@forward 'utils' with (
+  $RWDClass: RWDClass
+);
