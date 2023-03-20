@@ -20,11 +20,11 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        <LottieTest />
         <Who />
         <WhatSection />
         <How />
         <Footer />
+        {/* <LottieTest /> */}
         {/* <ScrollTop /> */}
       </main>
     </>
