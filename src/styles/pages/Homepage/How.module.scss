@@ -1,4 +1,4 @@
-/*#region container*/
+/* #region container*/
 .container_xs {
   @apply w-xs;
 }
@@ -16,11 +16,11 @@
 }
 .container {
   @apply container_xs container_sm container_md container_lg container_xl
-  m-auto h-[380vh];
+  m-auto h-[450vh];
 }
 /*#endregion */
 
-/*#region title*/
+/* #region title*/
 .title_xs {
   @apply title_sm sticky top-[2%] mb-[80px] p-2.5 text-center 
   text-2xl font-extrabold tracking-wider text-blue lg:hidden;
@@ -49,35 +49,30 @@
 /*#endregion */
 
 /* #region flow */
+.flow_sm {
+  @apply top-[10%];
+}
+.flow_lg {
+  @apply lg:top-[15%] lg:flex-row;
+}
 .flow {
-  @apply sticky top-[20%] flex flex-col justify-between md:top-[15%] lg:flex-row;
+  @apply flow_sm flow_lg sticky flex flex-col justify-between;
+  background-color: #f8f8f8;
 }
 /* #region left */
-.left_sm {
-  @apply mx-auto w-[80%];
-}
-.left_lg {
-  @apply lg:mt-10 lg:ml-0 lg:w-[50%];
-}
-.left_2xl {
-  @apply 2xl:max-w-[628px];
-}
 .left {
-  @apply left_sm left_lg left_2xl;
+  @apply mx-auto flex items-center justify-center;
 }
-/*#endregion */
-.planet {
-  @apply flex items-center justify-center;
-}
-/* #region inner */
 .planet__inner {
-  @apply absolute h-[25%] md:h-[35%];
+  @apply absolute lg:w-[50%];
 }
-.planet__cycle {
-  @apply absolute;
+.planet__ufo {
+  @apply absolute top-0 left-0;
+  offset-path: path(
+    'M672 360C672 428.77 649.279 495.613 607.37 550.137C565.461 604.661 506.712 643.811 440.256 661.501C373.8 679.191 303.362 674.429 239.892 647.955C176.422 621.481 123.477 574.78 89.2885 515.111C55.0997 455.442 41.5827 386.149 50.8392 318.005C60.0956 249.861 91.6067 186.684 140.473 138.297C189.34 89.9101 252.825 59.0237 321.056 50.4399C389.288 41.8562 458.445 56.056 517.774 90.8318'
+  );
 }
-/*#endregion */
-
+/* #endregion */
 /* #region right */
 .right_sm {
   @apply w-[100%];
@@ -85,21 +80,21 @@
 .right_lg {
   @apply lg:w-[45%];
 }
-.right_2xl {
-  @apply 2xl:w-[40%];
+.right_xl {
+  @apply xl:w-[40%];
 }
 .right {
-  @apply right_sm right_lg right_2xl text-center;
+  @apply right_sm right_lg right_xl text-center;
 }
 /* #region detail */
 .detail_xs {
   @apply mt-[50px] px-4 py-2;
 }
 .detail_sm {
-  @apply sm:mt-20 sm:px-[25px] sm:py-4;
+  @apply sm:mt-[10px] sm:px-[25px] sm:py-4;
 }
 .detail_md {
-  @apply md:mt-20 md:p-0;
+  @apply md:p-0;
 }
 .detail_lg {
   @apply lg:mt-[40px] lg:p-2.5;
@@ -172,4 +167,4 @@
 /*#endregion */
 /*#endregion */
 /*#endregion */
-/*#endregion */
+/* #endregion */
